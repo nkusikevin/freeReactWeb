@@ -1,5 +1,8 @@
 import React from 'react'
-
+import image1 from '../assets/img/about/1.jpg'
+import image2 from '../assets/img/about/2.jpg'
+import image3 from '../assets/img/about/3.jpg'
+import image4 from '../assets/img/about/4.jpg'
 function aboutUs() {
     return (
          <section className="page-section" id="about">
@@ -10,7 +13,7 @@ function aboutUs() {
                 </div>
                 <ul className="timeline">
                     <li>
-                        <div className="timeline-image"><img className="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="" /></div>
+                        <div className="timeline-image"><img className="rounded-circle img-fluid" src={image1} alt="" /></div>
                         <div className="timeline-panel">
                             <div className="timeline-heading">
                                 <h4>2009-2011</h4>
@@ -20,7 +23,7 @@ function aboutUs() {
                         </div>
                     </li>
                     <li className="timeline-inverted">
-                        <div className="timeline-image"><img className="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="" /></div>
+                        <div className="timeline-image"><img className="rounded-circle img-fluid" src={image2} alt="" /></div>
                         <div className="timeline-panel">
                             <div className="timeline-heading">
                                 <h4>March 2011</h4>
@@ -30,7 +33,7 @@ function aboutUs() {
                         </div>
                     </li>
                     <li>
-                        <div className="timeline-image"><img className="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="" /></div>
+                        <div className="timeline-image"><img className="rounded-circle img-fluid" src={image3} alt="" /></div>
                         <div className="timeline-panel">
                             <div className="timeline-heading">
                                 <h4>December 2012</h4>
@@ -40,7 +43,7 @@ function aboutUs() {
                         </div>
                     </li>
                     <li className="timeline-inverted">
-                        <div className="timeline-image"><img className="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="" /></div>
+                        <div className="timeline-image"><img className="rounded-circle img-fluid" src={image4} alt="" /></div>
                         <div className="timeline-panel">
                             <div className="timeline-heading">
                                 <h4>July 2014</h4>

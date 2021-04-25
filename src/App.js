@@ -1,15 +1,20 @@
-
+import React,{useState} from 'react'
 import './App.css';
 import PortFolio from "./components/portfolio"
 import AboutUs from './components/aboutUs'
 import Navbar from './components/Nabar'
 import Team from './components/Team';
 function App() {
+    const [isOpen ,setisOpen] = useState(false)
+    const toggle = ()=>{
+        setisOpen(!isOpen)
+    }
   return (
-    <div classNameName="App">
-    <Navbar/>
+    <div className="App">
+    {/* <Sidebar isOpen={isOpen} toggle={toggle}/> */}
+    <Navbar toggle={toggle}/>
         
-        <header className="masthead">
+        <header className="masthead" id="page-top">
             <div className="container">
                 <div className="masthead-subheading">Welcome To Our Studio!</div>
                 <div className="masthead-heading text-uppercase">It's Nice To Meet You</div>
